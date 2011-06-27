@@ -1,0 +1,10 @@
+brlock
+======
+
+What is brlock?
+brlock is a library that implements mutual exclusion lock primitives. There
+are two implementations of the locking primitive
+	o semlocks - sempahore based mutual exclusion lock.
+	o spinlocks - test-and-set based mutual exclusion lock.
+
+Author: Bharath Ramesh <bramesh.dev@gmail.com>

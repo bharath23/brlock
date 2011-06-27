@@ -1,0 +1,8 @@
+# exclude object files
+*.o
+
+# exclude shared object files
+*.so
+
+# exclude vim swap files
+.*swp
