@@ -12,7 +12,7 @@ CFLAGS = -g -Wall -Wextra -O3
 SOCFLAGS = -fPIC
 GNU = -D_GNU_SOURCE
 LDFLAGS = -Wl,-rpath ./
-LIBRARY = -L ./ -lbrlock
+LIBRARY = -lpthread
 
 OBJECTS = semlock.o spinlock.o
 
@@ -27,4 +27,4 @@ clean:
 	rm -f *.o
 
 lib: $(OBJECTS)
-	$(CC) -shared -Wl,-soname,libbrlock.so -o libbrlock.so $<
+	$(CC) -shared -Wl,-soname,libbrlock.so -o libbrlock.so $< $(LIBRARY)
