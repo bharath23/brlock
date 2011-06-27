@@ -4,8 +4,8 @@
  * Distributed under the terms of GNU LGPL, version 2.1
  */
 
+#include "brlocktypes.h"
 #include "chrono.h"
-#include "spinlock.h"
 
 int
 spinlock_init (spinlock_t *lock)

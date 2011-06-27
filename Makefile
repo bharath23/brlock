@@ -11,7 +11,6 @@ C99 = -std=c99
 CFLAGS = -g -Wall -Wextra -O3
 SOCFLAGS = -fPIC
 GNU = -D_GNU_SOURCE
-LDFLAGS = -Wl,-rpath ./
 LIBRARY = -lpthread
 
 OBJECTS = semlock.o spinlock.o

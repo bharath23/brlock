@@ -5,8 +5,8 @@
  */
 
 #include <errno.h>
+#include "brlocktypes.h"
 #include "chrono.h"
-#include "semlock.h"
 
 int
 semlock_init (semlock_t *lock)
