@@ -21,7 +21,7 @@ spinlock_lock (spinlock_t *lock)
 {
 	do {
 		while (lock->l);
-	} while (!__sync_lock_test_and_set (&lock->l, 1));
+	} while (__sync_lock_test_and_set (&lock->l, 1));
 
 	return 0;
 }

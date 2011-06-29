@@ -18,7 +18,7 @@ struct __semlock_type {
 typedef struct __semlock_type semlock_t;
 
 struct __spinlock_type {
-	int32_t l;
+	volatile int32_t l;
 	uint64_t t;
 };
 
